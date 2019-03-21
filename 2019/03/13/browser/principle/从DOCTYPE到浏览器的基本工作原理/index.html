@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="zh-CN">
+<html class="theme-next pisces use-motion" lang="zh-CN">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="doctype browser,">
+  <meta name="keywords" content="文档声明 浏览器,">
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="从doctype 到 浏览器实现的基本原理">
-<meta name="keywords" content="doctype browser">
+<meta name="description" content="从DOCTYPE到浏览器的基本工作原理DOCTYPE是什么玩意html是描述的页面结构，一个html文件一般包含两个板块，一个是文档声明，另一个就是各式各样的标签了。这里的文档声明就是DOCTYPE。下面介绍一下作为一个前端应该知道的文档声明的基本知识，深入学习请自行查阅相关文档。   DOCTYPE是文档声明，告知浏览器以何种模式来渲染文档 DOCTYPE不存在或格式不正确会导致文档以混杂模式呈">
+<meta name="keywords" content="文档声明 浏览器">
 <meta property="og:type" content="article">
-<meta property="og:title" content="doctype2browser-principle">
-<meta property="og:url" content="http://yoursite.com/2019/03/13/browser/principle/doctype2browser-principle/index.html">
+<meta property="og:title" content="从DOCTYPE到浏览器的基本工作原理">
+<meta property="og:url" content="http://yoursite.com/2019/03/13/browser/principle/从DOCTYPE到浏览器的基本工作原理/index.html">
 <meta property="og:site_name" content="Keylenn&#39;s blog">
-<meta property="og:description" content="从doctype 到 浏览器实现的基本原理">
+<meta property="og:description" content="从DOCTYPE到浏览器的基本工作原理DOCTYPE是什么玩意html是描述的页面结构，一个html文件一般包含两个板块，一个是文档声明，另一个就是各式各样的标签了。这里的文档声明就是DOCTYPE。下面介绍一下作为一个前端应该知道的文档声明的基本知识，深入学习请自行查阅相关文档。   DOCTYPE是文档声明，告知浏览器以何种模式来渲染文档 DOCTYPE不存在或格式不正确会导致文档以混杂模式呈">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-13T08:17:10.966Z">
+<meta property="og:updated_time" content="2019-03-15T04:24:31.369Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="doctype2browser-principle">
-<meta name="twitter:description" content="从doctype 到 浏览器实现的基本原理">
+<meta name="twitter:title" content="从DOCTYPE到浏览器的基本工作原理">
+<meta name="twitter:description" content="从DOCTYPE到浏览器的基本工作原理DOCTYPE是什么玩意html是描述的页面结构，一个html文件一般包含两个板块，一个是文档声明，另一个就是各式各样的标签了。这里的文档声明就是DOCTYPE。下面介绍一下作为一个前端应该知道的文档声明的基本知识，深入学习请自行查阅相关文档。   DOCTYPE是文档声明，告知浏览器以何种模式来渲染文档 DOCTYPE不存在或格式不正确会导致文档以混杂模式呈">
 
 
 
@@ -98,7 +98,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Pisces',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/03/13/browser/principle/doctype2browser-principle/">
+  <link rel="canonical" href="http://yoursite.com/2019/03/13/browser/principle/从DOCTYPE到浏览器的基本工作原理/">
 
 
 
 
 
-  <title>doctype2browser-principle | Keylenn's blog</title>
+  <title>从DOCTYPE到浏览器的基本工作原理 | Keylenn's blog</title>
   
 
 
@@ -233,7 +233,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/13/browser/principle/doctype2browser-principle/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/13/browser/principle/从DOCTYPE到浏览器的基本工作原理/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Keylenn">
@@ -250,7 +250,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">doctype2browser-principle</h1>
+          <h1 class="post-title" itemprop="name headline">从DOCTYPE到浏览器的基本工作原理</h1>
         
 
         <div class="post-meta">
@@ -300,7 +300,27 @@
       
 
       
-        <h1 id="从doctype-到-浏览器实现的基本原理"><a href="#从doctype-到-浏览器实现的基本原理" class="headerlink" title="从doctype 到 浏览器实现的基本原理"></a>从doctype 到 浏览器实现的基本原理</h1>
+        <h1 id="从DOCTYPE到浏览器的基本工作原理"><a href="#从DOCTYPE到浏览器的基本工作原理" class="headerlink" title="从DOCTYPE到浏览器的基本工作原理"></a>从DOCTYPE到浏览器的基本工作原理</h1><h2 id="DOCTYPE是什么玩意"><a href="#DOCTYPE是什么玩意" class="headerlink" title="DOCTYPE是什么玩意"></a>DOCTYPE是什么玩意</h2><p>html是描述的页面结构，一个html文件一般包含两个板块，一个是文档声明，另一个就是各式各样的标签了。<br>这里的文档声明就是DOCTYPE。下面介绍一下作为一个前端应该知道的文档声明的基本知识，深入学习请自行查阅相关文档。</p>
+<blockquote>
+<ul>
+<li>DOCTYPE是文档声明，告知浏览器以何种模式来渲染文档</li>
+<li>DOCTYPE不存在或格式不正确会导致文档以混杂模式呈现,在混杂模式中，页面以宽松的向后兼容的方式显示。</li>
+<li>对大小写不敏感，必须是 HTML 文档的第一行，位于 <html> 标签之前</html></li>
+<li>在 HTML 4.01 中有三种 &lt;!DOCTYPE&gt; 声明，&lt;!DOCTYPE&gt; 声明引用 DTD，因为 HTML 4.01 基于 SGML。DTD 规定了标记语言的规则，这样浏览器才能正确地呈现内容。</li>
+<li>在 HTML5 中只有一种声明 <code>&lt;!DOCTYPE html&gt;</code>，大多数时候的，我们在开发中可以直接使用这种声明</li>
+</ul>
+</blockquote>
+<h2 id="浏览器的基本工作原理"><a href="#浏览器的基本工作原理" class="headerlink" title="浏览器的基本工作原理"></a>浏览器的基本工作原理</h2><p>我们知道DOCTYPE是用来告知浏览器以何种的方式来渲染文档，我们可以得知，浏览器在请求得到的html资源后到渲染到屏幕上是做了很多的努力的，作为一名前端，不管是从开发角度考虑，还是从人道角度考虑（毕竟人家浏览器开发工程师那么努力，特别是优秀的v8），我们都应该学习浏览器的基本工作原理，因为浏览器就像你的伴侣，你不了解她，会吃大亏的！接下来我将结合winter大大地重学前端这门课（墙裂推荐）和平时自己的学习总结，整理浏览器的工作原理的系列文章。<br>下面通过一道经典面试题展开————<strong>从输入URL到页面加载发生了什么</strong><br>带着问题学习，让我们了解一下浏览器工作的大概过程。</p>
+<ol>
+<li>是否符合浏览器的缓存策略—<a href="./2019/03/14/browser/principle/浏览器缓存机制/">浏览器的缓存机制</a></li>
+<li>若没有缓存，将域名解析成对应的ip地址—DNS解析</li>
+<li>浏览器使用http(s)协议向服务端请求页面—HTTP协议</li>
+<li>解析HTML构建DOM树，解析css文件生成CSSOM，执行js，结合DOM树和CSSOM，生成render Tree—HTML解析、计算CSS属性、JS执行机制</li>
+<li>计算渲染对象的位置和大小并逐个渲染，得到内存中的位图—-布局，回流</li>
+<li>对位图进行合成（可选步骤），将渲染对象呈现在屏幕上—-绘制，重绘</li>
+</ol>
+<p>理解以上的过程，一定能让你充分理解你的浏览器伴侣。接下来将我个人学习的笔记进行整理，结合网上优秀的文章，采用（是什么-为什么-怎么用的思路模式）详解每一部分的内容。</p>
+
       
     </div>
     
@@ -317,7 +337,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/doctype-browser/" rel="tag"># doctype browser</a>
+            <a href="/tags/文档声明-浏览器/" rel="tag"># 文档声明 浏览器</a>
           
         </div>
       
@@ -330,15 +350,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/13/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
-              </a>
-            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/03/14/browser/principle/浏览器缓存机制/" rel="prev" title="浏览器缓存机制">
+                浏览器缓存机制 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -415,7 +435,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -428,7 +448,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">tags</span>
                 
               </div>
@@ -438,16 +458,6 @@
 
           
 
-          
-            <div class="links-of-author motion-element">
-                
-                  <span class="links-of-author-item">
-                    <a href="https://github.com/Keylenn" target="_blank" title="GitHub">
-                      
-                        <i class="fa fa-fw fa-github"></i>GitHub</a>
-                  </span>
-                
-            </div>
           
 
           
@@ -471,7 +481,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#从doctype-到-浏览器实现的基本原理"><span class="nav-number">1.</span> <span class="nav-text">从doctype 到 浏览器实现的基本原理</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#从DOCTYPE到浏览器的基本工作原理"><span class="nav-number">1.</span> <span class="nav-text">从DOCTYPE到浏览器的基本工作原理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#DOCTYPE是什么玩意"><span class="nav-number">1.1.</span> <span class="nav-text">DOCTYPE是什么玩意</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#浏览器的基本工作原理"><span class="nav-number">1.2.</span> <span class="nav-text">浏览器的基本工作原理</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -509,7 +519,7 @@
 
 
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
 
 
 
@@ -608,6 +618,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
 
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>

@@ -79,16 +79,21 @@
 
 
 
-<meta name="description" content="前端菜鸟">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Keylenn&#39;s blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="首先从语文角度理解一下js的面向对象这个标题，可以知道“js”是用来修饰“面向对象”一词的，也就是说要讲js的面向对象，必须知道什么是面向对象，通过这个无懈可击的逻辑，我们发现“面向”是用来修饰“对象”一词的，因此同理可证，要学习面向对象，得知道什么是对象。这也是本文的总体思路，写作模式依旧遵循灵魂深处的三驾马车–是什么==&amp;gt;为什么==&amp;gt;怎么用 对象是什么；为什么；怎么用来看看《面向对">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js的面向对象">
+<meta property="og:url" content="http://yoursite.com/2019/03/15/js&es/js的面向对象/index.html">
 <meta property="og:site_name" content="Keylenn&#39;s blog">
-<meta property="og:description" content="前端菜鸟">
+<meta property="og:description" content="首先从语文角度理解一下js的面向对象这个标题，可以知道“js”是用来修饰“面向对象”一词的，也就是说要讲js的面向对象，必须知道什么是面向对象，通过这个无懈可击的逻辑，我们发现“面向”是用来修饰“对象”一词的，因此同理可证，要学习面向对象，得知道什么是对象。这也是本文的总体思路，写作模式依旧遵循灵魂深处的三驾马车–是什么==&amp;gt;为什么==&amp;gt;怎么用 对象是什么；为什么；怎么用来看看《面向对">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://yoursite.com/imgs/object-1.jpg">
+<meta property="og:image" content="http://yoursite.com/imgs/object-2.png">
+<meta property="og:image" content="http://yoursite.com/imgs/object-3.png">
+<meta property="og:updated_time" content="2019-03-17T03:37:56.230Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Keylenn&#39;s blog">
-<meta name="twitter:description" content="前端菜鸟">
+<meta name="twitter:title" content="js的面向对象">
+<meta name="twitter:description" content="首先从语文角度理解一下js的面向对象这个标题，可以知道“js”是用来修饰“面向对象”一词的，也就是说要讲js的面向对象，必须知道什么是面向对象，通过这个无懈可击的逻辑，我们发现“面向”是用来修饰“对象”一词的，因此同理可证，要学习面向对象，得知道什么是对象。这也是本文的总体思路，写作模式依旧遵循灵魂深处的三驾马车–是什么==&amp;gt;为什么==&amp;gt;怎么用 对象是什么；为什么；怎么用来看看《面向对">
+<meta name="twitter:image" content="http://yoursite.com/imgs/object-1.jpg">
 
 
 
@@ -118,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2019/03/15/js&es/js的面向对象/">
 
 
 
 
 
-  <title>Keylenn's blog</title>
+  <title>js的面向对象 | Keylenn's blog</title>
   
 
 
@@ -143,8 +148,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -217,9 +221,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -249,9 +253,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/03/15/js&es/js的面向对象/" itemprop="url">js的面向对象</a></h1>
+          <h1 class="post-title" itemprop="name headline">js的面向对象</h1>
         
 
         <div class="post-meta">
@@ -301,9 +303,7 @@
       
 
       
-        
-          
-            <p>首先从语文角度理解一下js的面向对象这个标题，可以知道“js”是用来修饰“面向对象”一词的，也就是说要讲js的面向对象，必须知道什么是面向对象，通过这个无懈可击的逻辑，我们发现“面向”是用来修饰“对象”一词的，因此同理可证，要学习面向对象，得知道什么是对象。这也是本文的总体思路，写作模式依旧遵循灵魂深处的三驾马车–是什么==&gt;为什么==&gt;怎么用</p>
+        <p>首先从语文角度理解一下js的面向对象这个标题，可以知道“js”是用来修饰“面向对象”一词的，也就是说要讲js的面向对象，必须知道什么是面向对象，通过这个无懈可击的逻辑，我们发现“面向”是用来修饰“对象”一词的，因此同理可证，要学习面向对象，得知道什么是对象。这也是本文的总体思路，写作模式依旧遵循灵魂深处的三驾马车–是什么==&gt;为什么==&gt;怎么用</p>
 <h1 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h1><h2 id="是什么；为什么；怎么用"><a href="#是什么；为什么；怎么用" class="headerlink" title="是什么；为什么；怎么用"></a>是什么；为什么；怎么用</h2><p>来看看《面向对象分析与设计》一书是如何定义对象的：<br>对象应该是以下事物之一：</p>
 <ul>
 <li>一个可以触摸或者可以看见的东西</li>
@@ -393,8 +393,6 @@
 </li>
 </ol>
 
-          
-        
       
     </div>
     
@@ -411,137 +409,28 @@
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/14/browser/principle/浏览器缓存机制/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Keylenn">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Keylenn's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/03/14/browser/principle/浏览器缓存机制/" itemprop="url">浏览器缓存机制</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-14T16:15:07+08:00">
-                2019-03-14
-              </time>
+              <a href="/2019/03/14/browser/principle/浏览器缓存机制/" rel="next" title="浏览器缓存机制">
+                <i class="fa fa-chevron-left"></i> 浏览器缓存机制
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h1 id="浏览器缓存机制"><a href="#浏览器缓存机制" class="headerlink" title="浏览器缓存机制"></a>浏览器缓存机制</h1><p>浏览器缓存分 <strong>强缓存和协商缓存</strong> ,个人推荐<a href="https://www.jianshu.com/p/54cc04190252" target="_blank" rel="noopener">深入理解浏览器的缓存机制</a>，由于这篇文章已经讲得很清楚，个人觉得没必要再细讲，推荐阅读这篇优秀的文章（作者是浪里行舟，末尾有公众号和博客，欢迎star）,下面就说说我的读后感，也是我认为读完这篇文章至少需要get到的干货</p>
-<blockquote>
-<ul>
-<li>先看一张良心的思维导图，<img src="https://upload-images.jianshu.io/upload_images/3174701-8e74b69ad9376710" alt="浏览器的缓存机制"></li>
-</ul>
-</blockquote>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -551,149 +440,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/13/browser/principle/从DOCTYPE到浏览器的基本工作原理/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Keylenn">
-      <meta itemprop="description" content>
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Keylenn's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/03/13/browser/principle/从DOCTYPE到浏览器的基本工作原理/" itemprop="url">从DOCTYPE到浏览器的基本工作原理</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-13T16:15:07+08:00">
-                2019-03-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="从DOCTYPE到浏览器的基本工作原理"><a href="#从DOCTYPE到浏览器的基本工作原理" class="headerlink" title="从DOCTYPE到浏览器的基本工作原理"></a>从DOCTYPE到浏览器的基本工作原理</h1><h2 id="DOCTYPE是什么玩意"><a href="#DOCTYPE是什么玩意" class="headerlink" title="DOCTYPE是什么玩意"></a>DOCTYPE是什么玩意</h2><p>html是描述的页面结构，一个html文件一般包含两个板块，一个是文档声明，另一个就是各式各样的标签了。<br>这里的文档声明就是DOCTYPE。下面介绍一下作为一个前端应该知道的文档声明的基本知识，深入学习请自行查阅相关文档。</p>
-<blockquote>
-<ul>
-<li>DOCTYPE是文档声明，告知浏览器以何种模式来渲染文档</li>
-<li>DOCTYPE不存在或格式不正确会导致文档以混杂模式呈现,在混杂模式中，页面以宽松的向后兼容的方式显示。</li>
-<li>对大小写不敏感，必须是 HTML 文档的第一行，位于 <html> 标签之前</html></li>
-<li>在 HTML 4.01 中有三种 &lt;!DOCTYPE&gt; 声明，&lt;!DOCTYPE&gt; 声明引用 DTD，因为 HTML 4.01 基于 SGML。DTD 规定了标记语言的规则，这样浏览器才能正确地呈现内容。</li>
-<li>在 HTML5 中只有一种声明 <code>&lt;!DOCTYPE html&gt;</code>，大多数时候的，我们在开发中可以直接使用这种声明</li>
-</ul>
-</blockquote>
-<h2 id="浏览器的基本工作原理"><a href="#浏览器的基本工作原理" class="headerlink" title="浏览器的基本工作原理"></a>浏览器的基本工作原理</h2><p>我们知道DOCTYPE是用来告知浏览器以何种的方式来渲染文档，我们可以得知，浏览器在请求得到的html资源后到渲染到屏幕上是做了很多的努力的，作为一名前端，不管是从开发角度考虑，还是从人道角度考虑（毕竟人家浏览器开发工程师那么努力，特别是优秀的v8），我们都应该学习浏览器的基本工作原理，因为浏览器就像你的伴侣，你不了解她，会吃大亏的！接下来我将结合winter大大地重学前端这门课（墙裂推荐）和平时自己的学习总结，整理浏览器的工作原理的系列文章。<br>下面通过一道经典面试题展开————<strong>从输入URL到页面加载发生了什么</strong><br>带着问题学习，让我们了解一下浏览器工作的大概过程。</p>
-<ol>
-<li>是否符合浏览器的缓存策略—<a href="./2019/03/14/browser/principle/浏览器缓存机制/">浏览器的缓存机制</a></li>
-<li>若没有缓存，将域名解析成对应的ip地址—DNS解析</li>
-<li>浏览器使用http(s)协议向服务端请求页面—HTTP协议</li>
-<li>解析HTML构建DOM树，解析css文件生成CSSOM，执行js，结合DOM树和CSSOM，生成render Tree—HTML解析、计算CSS属性、JS执行机制</li>
-<li>计算渲染对象的位置和大小并逐个渲染，得到内存中的位图—-布局，回流</li>
-<li>对位图进行合成（可选步骤），将渲染对象呈现在屏幕上—-绘制，重绘</li>
-</ol>
-<p>理解以上的过程，一定能让你充分理解你的浏览器伴侣。接下来将我个人学习的笔记进行整理，结合网上优秀的文章，采用（是什么-为什么-怎么用的思路模式）详解每一部分的内容。</p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -701,6 +452,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -721,8 +476,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -773,6 +537,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#对象"><span class="nav-number">1.</span> <span class="nav-text">对象</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#是什么；为什么；怎么用"><span class="nav-number">1.1.</span> <span class="nav-text">是什么；为什么；怎么用</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#面向对象"><span class="nav-number">2.</span> <span class="nav-text">面向对象</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#是什么"><span class="nav-number">2.1.</span> <span class="nav-text">是什么</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么"><span class="nav-number">2.2.</span> <span class="nav-text">为什么</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#怎么实现"><span class="nav-number">2.3.</span> <span class="nav-text">怎么实现</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#js的面向对象"><span class="nav-number">3.</span> <span class="nav-text">js的面向对象</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#是什么-1"><span class="nav-number">3.1.</span> <span class="nav-text">是什么</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -913,6 +693,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
